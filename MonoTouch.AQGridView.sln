@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTouch.AQGridView", "MonoTouch.AQGridView\MonoTouch.AQGridView.csproj", "{173D0094-9718-4CEA-8B98-D09AD1FCDCBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{173D0094-9718-4CEA-8B98-D09AD1FCDCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173D0094-9718-4CEA-8B98-D09AD1FCDCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173D0094-9718-4CEA-8B98-D09AD1FCDCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173D0094-9718-4CEA-8B98-D09AD1FCDCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MonoTouch.AQGridView\MonoTouch.AQGridView.csproj
+	EndGlobalSection
+EndGlobal

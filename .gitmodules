@@ -1,0 +1,3 @@
+[submodule "SubModules/AQGridView-Universal"]
+	path = SubModules/AQGridView-Universal
+	url = https://github.com/theonlylawislove/AQGridView-Universal.git
