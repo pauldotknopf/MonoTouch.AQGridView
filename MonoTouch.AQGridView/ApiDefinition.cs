@@ -261,11 +261,11 @@ namespace MonoTouch.AQGridView
 	public partial interface AQGridViewDataSource {
 
 		//- (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView;
-		[Export ("numberOfItemsInGridView:")]
+		[Export ("numberOfItemsInGridView:"), Abstract]
 		uint NumberOfItemsInGridView (AQGridView gridView);
 
 		//- (AQGridViewCell *) gridView: (AQGridView *) gridView cellForItemAtIndex: (NSUInteger) index;
-		[Export ("gridView:cellForItemAtIndex:")]
+		[Export ("gridView:cellForItemAtIndex:"), Abstract]
 		AQGridViewCell CellForItemAtIndex (AQGridView gridView, uint index);
 
 		//- (CGSize) portraitGridCellSizeForGridView: (AQGridView *) gridView;
