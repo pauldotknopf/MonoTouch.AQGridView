@@ -46,7 +46,7 @@ namespace MonoTouch.AQGridView
 
 		//- (void) gridView: (AQGridView *) gridView gestureRecognizer: (UIGestureRecognizer *) recognizer activatedForItemAtIndex: (NSUInteger) index;
 		[Export ("gridView:gestureRecognizer:activatedForItemAtIndex:")]
-		void GridView (AQGridView gridView, UIGestureRecognizer recognizer, uint index);
+		void GestureRecognizerActivatedForItemAtIndex (AQGridView gridView, UIGestureRecognizer recognizer, uint index);
 
 		//- (CGRect) gridView: (AQGridView *) gridView adjustCellFrame: (CGRect) cellFrame withinGridCellFrame: (CGRect) gridCellFrame;
 		[Export ("gridView:adjustCellFrame:withinGridCellFrame:")]
@@ -56,9 +56,8 @@ namespace MonoTouch.AQGridView
 		[Export ("gridView:commitEditingStyle:forRowAtIndex:")]
 		void CommitEditingStyle (AQGridView aGridView, UITableViewCellEditingStyle editingStyle, uint index);
 
-		// TODO
-		//[Notification, Field ("AQGridViewSelectionDidChangeNotification")]
-		//NSString AqgRidViewSelectionDidChangeNotification { get; }
+//		[Notification, Field ("AQGridViewSelectionDidChangeNotification")]
+//		NSString AQGridViewSelectionDidChangeNotification { get; }
 	}
 
 	//@interface AQGridView : UIScrollView
@@ -426,9 +425,9 @@ namespace MonoTouch.AQGridView
 	[BaseType (typeof (UIViewController))]
 	public partial interface AQGridViewController : AQGridViewDelegate, AQGridViewDataSource {
 
-		////@property (nonatomic, retain) AQGridView * gridView;
-		//[Export ("gridView")]
-		//AQGridView GridView { get; set; }
+		//@property (nonatomic, retain) AQGridView * gridView;
+		[Export ("gridView")]
+		AQGridView GridView { get; set; }
 
 		//@property (nonatomic) BOOL clearsSelectionOnViewWillAppear;
 		[Export ("clearsSelectionOnViewWillAppear")]
