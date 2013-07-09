@@ -365,7 +365,7 @@ namespace MonoTouch.AQGridView
 		UIView BackgroundView { get; set; }
 
 		//@property (nonatomic, retain) UIView * selectedBackgroundView;
-		[Export ("selectedBackgroundView")]
+		[Export ("selectedBackgroundView"), NullAllowed]
 		UIView SelectedBackgroundView { get; set; }
 
 		//@property (nonatomic, readonly, copy) NSString * reuseIdentifier;
